@@ -1,49 +1,99 @@
 # Student Task Management Application
-A modern and user-friendly Student Task Manager application that helps students organize their 
-academic and personal activities efficiently. The application aims to improve productivity, 
-reduce missed deadlines, and help students manage their daily schedules in a simple and intelligent way.
 
-## Main Objectives
-1. Help students manage tasks and assignments easily
-2. Improve daily productivity and time management
-3. Reduce procrastination and missed deadlines
-4. Provide a clean and stress-free user experience
-5. Track study habits and progress
+## Overview
 
-# Core Features
-1. User Authentication
-2. Dashboard
+This app helps students keep track of daily and upcoming academic tasks with a clean dashboard and simple workflow. It supports task creation, status tracking, deadline visibility, and notifications to help stay on top of responsibilities.
 
-3. Task Management
-4. Smart Scheduling
-5. Study and Habit Tracking
-6. Productivity Analytics
-7. Notes Section
+## Key Features
 
-# Goal of Student Task Management Application
+- Create and manage tasks
+- Track task status as pending, ongoing, or completed
+- View deadlines and upcoming work clearly
+- Get reminder notifications
+- Monitor summary analytics from the dashboard
+- Use a modern UI with reusable components
+
+## Tech Stack
+
+- Kotlin
+- Jetpack Compose
+- Android Studio
+- Gradle
+
+## Project Structure
+
+```text
+student-task-manager-application/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   ├── res/
+│   │   │   └── AndroidManifest.xml
+│   │   └── test/
+│   └── build.gradle.kts
+├── gradle/
+│   └── wrapper/
+├── build.gradle.kts
+├── gradlew
+├── gradlew.bat
+├── settings.gradle.kts
+├── README.md
+└── gradle.properties
+```
+
+## Main App Areas
+
+- `components/` — reusable UI pieces like dialogs, fields, and task cards
+- `data/` — models, repositories, and database logic
+- `screens/` — dashboard, deadlines, analytics, and authentication screens
+- `notifications/` — reminder scheduling and task alerts
+- `ui/theme/` — app colors, typography, and theme definitions
+
+## Getting Started
+
+1. Open the project in Android Studio.
+2. Let Gradle sync the project dependencies.
+3. Connect an emulator or Android device.
+4. Run the app from the `app` module.
+
+## Run Commands
+
+```bash
+./gradlew assembleDebug
+./gradlew installDebug
+```
+
+## Goal of Student Task Management Application
+
 A smart productivity companion for students by helping them manage tasks, improve focus, maintain consistency, and achieve better academic organization.
 
-# Screenshots
-## Welcome Screen and Login/Sign Up Authentication
+## License
+
+This project is for educational and personal use unless otherwise specified by the repository owner.
+
+## Screenshots
+
+### Welcome Screen and Login/Sign Up Authentication
 <p text-align="center">
   <img src="docs/screenshots/showcase/welcome.jpeg" alt="Welcome Screen" width="300"/>
   <img src="docs/screenshots/showcase/login.jpeg" alt="Sign In or login" width="300"/>
 </p>
 
-## Dashboard and Adding Tasks
+### Dashboard and Adding Tasks
 <p text-align="center">
   <img src="docs/screenshots/showcase/Dashboard.jpeg" alt="Dashboard" width="300"/> 
   <img src="docs/screenshots/showcase/add-task.jpeg" alt="add-task" width="300"/>
 </p>
 
-## Deadlines, Completed Tasks and Analytics
+### Deadlines, Completed Tasks and Analytics
 <p text-align="center">
   <img src="docs/screenshots/showcase/deadlines.jpeg" alt="Deadlines" width="300"/>
   <img src="docs/screenshots/showcase/tasks.jpeg" alt="completed-tasks" width="300" />
   <img src="docs/screenshots/showcase/analytics.jpeg" alt="analytics and weekly reports" width="300" />
 </p>
 
-## Dark Preview
+### Dark Preview
 
 <p text-align="center">
   <img src="docs/screenshots/dark-preview/dashboard.jpeg" alt="tasks" width="300" />
