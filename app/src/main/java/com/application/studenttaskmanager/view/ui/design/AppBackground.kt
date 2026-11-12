@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.blur
 import androidx.compose.ui.draw.paint
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -18,11 +19,14 @@ fun AppBackground() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .blur(5.dp)
-            .paint(
-                painter = painterResource(R.drawable.app_background),
-                contentScale = ContentScale.Crop
+            .background(
+                brush = Brush.verticalGradient(
+                    colors = listOf(
+                        Color(0xFFFFF8E1),
+                        Color(0xFFFDF3D0),
+                        Color(0xFFF7E4A3)
+                    )
+                )
             )
-            .background(Color.Black.copy(alpha = 0.35f))
     )
 }

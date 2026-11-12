@@ -51,7 +51,7 @@ fun WelcomeScreen(
             text = stringResource(id = R.string.app_name),
             fontSize = 30.sp,
             fontWeight = FontWeight.ExtraBold,
-            color = Color(0xFFFFFFFF),
+            color = Color(0xFF163F98),
             fontStyle = FontStyle.Italic
         )
 
@@ -64,7 +64,7 @@ fun WelcomeScreen(
             fontSize = 18.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Medium,
-            color = Color(0xFFFFFFFF),
+            color = Color(0xFF163F98),
         )
 
         Spacer(modifier = Modifier.height(30.dp))
