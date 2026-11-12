@@ -1,8 +1,8 @@
-# Student Task Management Application
+# Sprinter (Student Task Management Application)
 
 ## Overview
 
-This app helps students keep track of daily and upcoming academic tasks with a clean dashboard and simple workflow. It supports task creation, status tracking, deadline visibility, and notifications to help stay on top of responsibilities.
+Sprinter helps students keep track of daily and upcoming academic tasks with a clean dashboard and simple workflow. It supports task creation, status tracking, deadline visibility, and notifications to help stay on top of responsibilities.
 
 ## Key Features
 
